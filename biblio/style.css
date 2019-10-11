@@ -1,0 +1,40 @@
+html, body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#search{
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 35%;
+    display: flex;
+    border: 1px solid black;
+ }
+
+
+#table_search{
+    display: flex;
+    margin-top: 100px;  
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+ }
+ form label{
+     
+    padding: 5%;   
+}
+ #tab tr, #tab th, #tab td{
+    font-size: 1.5em;
+    width: 400px;
+    border: 1px solid black;
+ }
+ #btn{
+     margin-top: 50px;
+ }
+
+ #edit{
+     width: 75px;
+ }
