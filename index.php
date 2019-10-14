@@ -22,7 +22,7 @@ if(isset($_POST['connect'])){
         $error = "Vous devez compléter tous les champs.";
     };
     if(empty($_POST['login'])){
-        $error .= "Vous devez complété votre identifiant";
+        $error .= "Vous devez compléter votre identifiant";
     };
     if(empty($_POST['mdp'])){
         $error .= "Vous devez renseigner votre mot de passe.";
@@ -41,7 +41,7 @@ if(isset($_POST['connect'])){
 </head>
 <body class="admin">
     <main>
-        <?php if(!isset($_SESSION['id'])){ ?> 
+        <?php if(!isset($_SESSION['id'])){ ?>
         <div class="form">
         <form method="post">
         <h2>Connexion:</h2>
@@ -53,13 +53,13 @@ if(isset($_POST['connect'])){
         <a href="">Mot de passe oublié</a>
         <?php if(isset($error)){ echo $error;} ?>
         </form>
-        
+
         </div>
-        <?php }else{ 
+        <?php }else{
             require_once "menu.php";?>
             <h2> Bienvenue <?php echo $_SESSION['login']; ?></h2>
         <?php } ?>
     </main>
-    
+
 </body>
 </html>

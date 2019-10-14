@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +11,7 @@
 <body class="Admin">
   <?php require_once 'menu.php' ?>
   <div class="bloc">
-    
+
     <nav class="bloc3">
       <form class="parent" action="parent.php" method="post">
           <input type="submit" value="Parent">

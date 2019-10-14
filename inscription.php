@@ -1,5 +1,6 @@
 <?php
-require_once '../connect.php';
+require_once 'connect.php';
+session_start()
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +11,7 @@ require_once '../connect.php';
   <link rel="stylesheet" href="../style.css" media="screen" type="text/css" />
 </head>
 <body class="Admin">
-  <?php require_once '../menu.php' ?>
+  <?php require_once 'menu.php' ?>
   <div class="bloc">
 
     <div class="form">
@@ -51,7 +52,7 @@ if (isset($_POST['submit'])){
                 // On crypte le mot de passe
                 $_POST['password'] = sha1($_POST['password']);
                 // on se connecte à MySQL et on sélectionne la base
-                
+
                     $function = htmlspecialchars($_POST['function']);
                 //On créé la requête
                 $req = "INSERT INTO user VALUES (NULL,'".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['email']."','".$_POST['login']."','".$_POST['password']."','".$function."')";

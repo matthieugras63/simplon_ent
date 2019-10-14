@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'connect.php';
 $req = "SELECT * FROM user WHERE function='administration'";
 $send=mysqli_query($link,$req);

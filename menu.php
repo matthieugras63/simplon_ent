@@ -14,10 +14,10 @@
     <form class="kid" action="kid.php" method="post">
         <input type="submit" value="Kid">
     </form>
-    <form class="bibliotheque" action="bibliotheque.php" method="post">
+    <form class="bibliotheque" action="biblio/index.php" method="post">
         <input type="submit" value="bibliothèque">
     </form>
-    <form class="cantine" action="cantine/index2.php" method="post">
+    <form class="cantine" action="cantine/index-admin.php" method="post">
       <input type="submit" value="Gestion cantine">
     </form>
   <?php }?>
@@ -27,7 +27,7 @@
     </form>
   <?php } ?>
   <?php if($_SESSION['function'] == "professeur"){ ?>
-    <form class="bibliotheque" action="bibliotheque.php" method="post">
+    <form class="bibliotheque" action="biblio/index.php" method="post">
         <input type="submit" value="bibliothèque">
     </form>
   <?php } ?>

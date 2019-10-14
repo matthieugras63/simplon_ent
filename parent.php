@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'connect.php';
 $req = "SELECT * FROM user WHERE function='parent'";
 $send=mysqli_query($link,$req);
@@ -33,7 +34,7 @@ $send=mysqli_query($link,$req);
         Nom : <?php echo $result['lastname'] ?><br>
         Email :  <?php echo $result['email'] ?><br>
         Identifiant : <?php echo $result['login'] ?><br>
-        Fonction : <?php echo $result['firstname'] ?><br>
+        Fonction : <?php echo $result['function'] ?><br>
         <hr>
         <a class="modify" href="modifyUtilisateur.php">   Modifier   </a></tr>
         <a class="suppr" href="SuppUtilisateur.php">   Supprimer   </a></tr>
