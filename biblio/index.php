@@ -1,4 +1,5 @@
-<?php require_once "connect.php" ?>
+<?php require_once "../connect.php" ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -39,10 +40,10 @@
     $visu_bibli =  "SELECT id, name, id_author, dispo FROM book where book.name like '%$title%'";
 
 
-   
-    
-       
-       
+
+
+
+
         //exécution de la requête:
         $request = mysqli_query($link, $visu_bibli);
 
@@ -54,8 +55,8 @@
 							<th>Auteur</th>
 							<th>Disponibilité</th>
                             <th>Editer</th>
-							
-                        </tr> 
+
+                        </tr>
                         </thead>";
 
         //affichage des données:
@@ -69,7 +70,7 @@
            <td>{$result['dispo']}</td>
            <td><img id='edit' src='edit.jpg'></td>
        </tr>
-       
+
        </table>";
         }
     }

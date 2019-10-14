@@ -1,7 +1,7 @@
 <?php require_once('add_genre.php'); ?>
 <?php require_once('add_author.php'); ?>
 <?php require_once('add_book.php'); ?>
-
+<?php require_once '../connect.php' ?>
 
 	<!DOCTYPE html>
 	<html>
@@ -36,7 +36,7 @@
 			</p>
 
 			<p>
-				<label for="date">date (ex:1889-12-31 23:59:59):</label>	
+				<label for="date">date (ex:1889-12-31 23:59:59):</label>
 				<input type="text" name="date">
 			</p>
 
@@ -45,11 +45,11 @@
 				<select name="book_genre" form="add_book">
 					<?php
 					$sql = "SELECT name from genre ";
-		            $req = mysqli_query($link,$sql); 
-		            while($row = mysqli_fetch_array($req)){		
-		        	   echo '<option value="'.$row[0].'">'.$row[0].'</option>';	   
+		            $req = mysqli_query($link,$sql);
+		            while($row = mysqli_fetch_array($req)){
+		        	   echo '<option value="'.$row[0].'">'.$row[0].'</option>';
 		            }
-		            mysqli_free_result ($req); 
+		            mysqli_free_result ($req);
 		            ?>
 				</select>
 			</p>
@@ -58,11 +58,11 @@
 				<select name="book_author" form="add_book">
 					<?php
 					$sql = "SELECT name from author ";
-		            $req = mysqli_query($link,$sql); 
-		            while($row = mysqli_fetch_array($req)){		
-		        	   echo '<option value="'.$row[0].'">'.$row[0].'</option>';	   
+		            $req = mysqli_query($link,$sql);
+		            while($row = mysqli_fetch_array($req)){
+		        	   echo '<option value="'.$row[0].'">'.$row[0].'</option>';
 		            }
-		            mysqli_free_result ($req); 
+		            mysqli_free_result ($req);
 		            ?>
 				</select>
 			</p>

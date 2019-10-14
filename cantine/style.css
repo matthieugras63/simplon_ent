@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(cantine.jpg) no-repeat top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* SECTION_1 */
+#section_1 {
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+}
+
+/* SECTION_2 */
+
+#section_2 {
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+input {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+li {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9));
+    border-radius: 30px;
+    word-break: normal;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 10px;
+    height: 30px;
+}
+
+input {
+    border-radius: 30px;
+    width: 20%;
+    height: 5%;
+}
+
+#section_2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.reserv {
+    background-color: green;
+    width: 15%;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.annul {
+    background-color: red;
+    width: 15%;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin-top: 80px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.button {
+    flex-direction: column;
+    width: 15%;
+    float: right;
+}
+
+.menu {
+    width: 80%;
+    float: left;
+}
+
+.monMenu {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jour {
+    text-align: center;
+}
+
+.modify {
+    margin-left: 16%;
+}
+
+.reservation {
+    width: 30%;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9));
+    border-radius: 30px;
+    height: 39%;
+    margin: 0 auto;
+    margin-top: 120px;
+    float: none;
+}
+
+select {
+    width: 100%;
+}
+
+.inputDate {
+    width: 99%;
+    border: none;
+}
+
+.inputDate2 {
+    width: 99%;
+    background-color: green;
+    height: 60px;
+    color: white;
+    border: none;
+}
+
+.inputDate3 {
+    width: 99%;
+    background-color: red;
+    height: 60px;
+    color: white;
+    border: none;
+}
+
+.retour {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    background-color: blue;
+    border: none;
+    border-radius: 30px;
+    height: 10%;
+    color: white;
+}
